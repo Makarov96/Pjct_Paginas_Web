@@ -18,7 +18,7 @@
       $h = new User($first_name ,$last_name,$direction,$apt,$country
       ,$card_type,$card_number,$cvc,$month,$year);
 
-      echo "Hello, " . $h->getFname(). "! You are ". $h->isAdult();
+      echo "Hello, " . $h->getFname(). "! You are ";
 
 }
 
