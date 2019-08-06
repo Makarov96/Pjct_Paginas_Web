@@ -26,50 +26,47 @@ Class User {
      $this->month=$month;
      $this->year=$year;
  }
-//Primer nombre
+
     function getFname() {
         return $this->first_name;
     }
-   //Segundo nombre
+
     function getSname() {
        return $this->last_name;
    }
 
-   
+
    function getDirection() {
        return $this->direction;
    }
-   
+
    function getCountry() {
-       return $this->apt;
-   }
-   
-   function getApt() {
        return $this->country;
    }
-   
+
+   function getApt() {
+       return $this->apt;
+   }
+
    function getCardType() {
        return $this->card_type;
    }
-   
+
    function getCardNumber() {
        return $this->card_number;
    }
-   
+
    function getCvc() {
        return $this->cvc;
    }
-   
+
    function getMonth() {
        return $this->month;
    }
-   
+
    function getYear() {
        return $this->year;
    }
-   
-   
-
 
 
 }
