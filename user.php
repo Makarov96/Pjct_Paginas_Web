@@ -11,9 +11,11 @@ Class User {
  private $cvc;
  private $month;
  private $year;
+ private $email;
+ private $cellphone;
 
  function __construct( $first_name, $last_name,$direction,
- $apt,$country,$card_type,$card_number,$cvc,$month,$year
+ $apt,$country,$card_type,$card_number,$cvc,$month,$year,$email,$cellphone
  ) {
      $this->first_name = $first_name;
      $this->last_name=$last_name;
@@ -25,7 +27,16 @@ Class User {
      $this->cvc=$cvc;
      $this->month=$month;
      $this->year=$year;
+     $this->email=$email;
+     $this->cellphone=$cellphone;
  }
+    function getCell() {
+         return $this->cellphone;
+     }
+
+     function getEmail() {
+        return $this->email;
+     }
 
     function getFname() {
         return $this->first_name;
